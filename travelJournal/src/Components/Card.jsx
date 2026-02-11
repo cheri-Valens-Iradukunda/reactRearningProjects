@@ -1,11 +1,10 @@
-import image1 from "../assets/imag1.png"
 import { FaLocationDot } from "react-icons/fa6";
 
 export const Card = (props) => {
 
 
     return <div className="flex gap-4 p-7">
-        <img src={`./src/assets/${props.image}.png`} width={250} className="rounded" alt="image" />
+        <img src={props.image} width={250} className="rounded" alt="image" />
         <div className="*:my-2">
             <div className="flex gap-3 text-sm">
                 <div className="flex content-center gap-1">

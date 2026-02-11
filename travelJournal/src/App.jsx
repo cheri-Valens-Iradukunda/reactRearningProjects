@@ -1,19 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { Header } from './Components/Header'
 import { Card } from './Components/Card'
+import { image1, image2, image3 } from './assets/Images'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const JournalData = [
+    {location:"Japan",place: "Mount Fuji",img:image1},
+    {location:"Australia",place: "Sydney Opera House",img:image2},
+    {location:"Norway",place: "Geirangerfjord",img:image3},
+  ]
 
   return (
     <>
       <Header />
-      <Card image="imag1" location="Japan" placeName="Mount Fuji" />
-      <Card image="image2" location="Australia" placeName="Sydney Opera House" />
-      <Card image="image3" location="Norway" placeName="Geirangerfjord" />
+      {
+      JournalData.map((elem,index)=><Card key={index} image={elem.img} location={elem.location} placeName={elem.place} />)
+      }
+
     </>
   )
 }

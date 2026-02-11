@@ -13,11 +13,12 @@ function App() {
       <Header />
       <main className='ml-5'>
         <h2 className='text-3xl my-10 text-white font-semibold'>Fun facts about React</h2>
-
-        <FunFact fact="was first released in 2013" />
-        <FunFact fact="was originary created by jordan walke" />
-        <FunFact fact="was first released in 2013" />
-        <FunFact fact="was originary created by jordan walke" />
+        <ul>
+          <FunFact fact="was first released in 2013" />
+          <FunFact fact="was originary created by jordan walke" />
+          <FunFact fact="was first released in 2013" />
+          <FunFact fact="was originary created by jordan walke" />
+        </ul>
       </main>
     </>
   )

@@ -7,15 +7,18 @@ import { SecondExport, SingleExport } from './Components/Component/Export'
 
 function App() {
 
-  const [name,setName] = useState()
+  // const [name,setName] = useState()
   // useEffect(()=>{
   //   console.log(name)
   // },[name])
   return (
     <>
-      <Input/>
+      {/* <Input setName = {setName} /> */}
       <div className='components'>
-        {/* <button>click here</button> */}
+        <Default1 />
+        <SingleExport />
+        <SecondExport />
+        {/* <ExportDefault0 /> */}
       </div>
     </>
   )
